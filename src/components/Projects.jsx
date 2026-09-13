@@ -4,7 +4,7 @@ const projects = [
   {
     id: 1,
     title: 'Youtube Channel',
-    description: 'ENG - My channel where I create interesting content! RU - Мой канал на котором я создаю интересный контент!',
+    description: 'ENG - My channel where I create interesting content!\nRU - Мой канал на котором я создаю интересный контент!',
     tags: ['React', 'CSS'],
     image: '/images/youtube.png',
     github: 'https://github.com/',
