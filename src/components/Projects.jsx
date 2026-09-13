@@ -3,33 +3,37 @@ import './Projects.css'
 const projects = [
   {
     id: 1,
-    title: 'E-Commerce Platform',
-    description: 'A full-stack online store with cart, payments, and admin dashboard.',
-    tags: ['React', 'Node.js', 'MongoDB'],
-    github: '#',
-    live: '#'
+    title: 'Youtube Channel',
+    description: 'ENG - My channel where I create interesting content! RU - Мой канал на котором я создаю интересный контент!',
+    tags: ['React', 'CSS'],
+    image: '/images/youtube.png',
+    github: 'https://github.com/',
+    live: 'https://www.youtube.com/@ChaosPrime'
   },
   {
     id: 2,
-    title: 'Task Manager App',
-    description: 'A productivity app with drag-and-drop boards and real-time updates.',
-    tags: ['TypeScript', 'React', 'Firebase'],
+    title: 'E-Commerce Platform',
+    description: 'A full-stack online store with cart, payments, and admin dashboard.',
+    tags: ['React', 'Node.js', 'MongoDB'],
+    image: '',
     github: '#',
     live: '#'
   },
   {
     id: 3,
-    title: 'Weather Dashboard',
-    description: 'A beautiful weather app with 7-day forecast and interactive maps.',
-    tags: ['React', 'OpenWeather API', 'CSS'],
+    title: 'Task Manager App',
+    description: 'A productivity app with drag-and-drop boards and real-time updates.',
+    tags: ['TypeScript', 'React', 'Firebase'],
+    image: '',
     github: '#',
     live: '#'
   },
   {
     id: 4,
-    title: 'Chat Application',
-    description: 'Real-time messaging app with rooms, typing indicators, and file sharing.',
-    tags: ['Node.js', 'Socket.io', 'React'],
+    title: 'Weather Dashboard',
+    description: 'A beautiful weather app with 7-day forecast and interactive maps.',
+    tags: ['React', 'OpenWeather API', 'CSS'],
+    image: '',
     github: '#',
     live: '#'
   }
@@ -44,6 +48,15 @@ function Projects() {
         <div className="projects__grid">
           {projects.map((project) => (
             <div key={project.id} className="project-card">
+              {project.image && (
+                <a href={project.live} target="_blank" rel="noreferrer" className="project-card__image-link">
+                  <img
+                    src={project.image}
+                    alt={project.title}
+                    className="project-card__image"
+                  />
+                </a>
+              )}
               <div className="project-card__header">
                 <h3 className="project-card__title">{project.title}</h3>
                 <div className="project-card__links">
