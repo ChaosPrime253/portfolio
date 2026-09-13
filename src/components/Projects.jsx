@@ -6,6 +6,7 @@ const projects = [
     title: 'Youtube Channel',
     description: 'ENG - My channel where I create interesting content!\nRU - Мой канал на котором я создаю интересный контент!',
     tags: ['Youtube'],
+    image: '/images/youtube.png',
     youtube: 'https://www.youtube.com/@ChaosPrime',
     live: 'https://www.youtube.com/@ChaosPrime'
   },
